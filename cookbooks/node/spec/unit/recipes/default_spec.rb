@@ -24,6 +24,9 @@ describe 'node::default' do
     it 'should run nginx' do
       expect(chef_run).to start_service('nginx')
     end
+    # it 'should install nodejs from a recipe' do
+    #   expect(chef_run).to include_recipe('nodejs')
+    # end
   end
 end
 #   context 'When all attributes are default, on CentOS 7' do
